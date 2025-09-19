@@ -26,13 +26,6 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: HomeSpace
-  * Template URL: https://bootstrapmade.com/homespace-bootstrap-real-estate-template/
-  * Updated: Jul 05 2025 with Bootstrap v5.3.7
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body class="index-page">
@@ -49,11 +42,21 @@
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="properties.html">Properties</a></li>
+          <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="kitchen.html">Kitchen</a></li>
+              <li><a href="plumbing.html">Plumbing</a></li>
+              <li><a href="roofing.html">Roofing</a></li>
+              <li><a href="windows.html">Windows</a></li>
+              <li><a href="doors.html">Doors</a></li>
+              <li><a href="bathroom-remodeling.html">Bathroom Remodeling</a></li>
+            </ul>
+          </li>
+          <!-- <li><a href="properties.html">Properties</a></li>
           <li><a href="services.html">Services</a></li>
-          <li><a href="agents.html">Agents</a></li>
+          <li><a href="agents.html">Agents</a></li> -->
           <li><a href="blog.html">Blog</a></li>
-          <li class="dropdown"><a href="#"><span>More Pages</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <!-- <li class="dropdown"><a href="#"><span>More Pages</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="property-details.html">Property Details</a></li>
               <li><a href="service-details.html">Service Details</a></li>
@@ -63,25 +66,9 @@
               <li><a href="privacy.html">Privacy</a></li>
               <li><a href="404.html">404</a></li>
             </ul>
-          </li>
+          </li> -->
 
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
+          
           <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -340,7 +327,7 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row gy-5">
+        <!-- <div class="row gy-5">
 
           <div class="col-lg-8">
 
@@ -444,6 +431,62 @@
 
           </div>
 
+        </div> -->
+
+        <div class="row gy-4 mt-4">
+
+          <div class="col-xl-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="property-card-horizontal">
+              <div class="property-image-horizontal">
+                <img src="assets/img/real-estate/property-interior-5.webp" alt="Penthouse" class="img-fluid">
+                <div class="property-badge-horizontal exclusive">Exclusive</div>
+              </div>
+              <div class="property-content-horizontal">
+                <h3><a href="property-details.html">Luxury Penthouse Suite</a></h3>
+                <div class="property-location-horizontal">
+                  <i class="bi bi-geo-alt"></i>
+                  <span>Las Vegas, NV 89102</span>
+                </div>
+                <div class="property-features">
+                  <span class="feature"><i class="bi bi-house"></i> 3 Bedrooms</span>
+                  <span class="feature"><i class="bi bi-droplet"></i> 3 Bathrooms</span>
+                  <span class="feature"><i class="bi bi-rulers"></i> 2,850 sq ft</span>
+                </div>
+                <p>Spectacular penthouse with floor-to-ceiling windows and private rooftop terrace overlooking the city skyline.</p>
+                <div class="property-footer-horizontal">
+                  <div class="property-price-horizontal">$2,195,000</div>
+                  <a href="property-details.html" class="btn-view-horizontal">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-6" data-aos="fade-up" data-aos-delay="700">
+            <div class="property-card-horizontal">
+              <div class="property-image-horizontal">
+                <img src="assets/img/real-estate/property-interior-8.webp" alt="Modern Home" class="img-fluid">
+                <div class="property-badge-horizontal new">New</div>
+              </div>
+              <div class="property-content-horizontal">
+                <h3><a href="property-details.html">Modern Architectural Gem</a></h3>
+                <div class="property-location-horizontal">
+                  <i class="bi bi-geo-alt"></i>
+                  <span>Phoenix, AZ 85001</span>
+                </div>
+                <div class="property-features">
+                  <span class="feature"><i class="bi bi-house"></i> 4 Bedrooms</span>
+                  <span class="feature"><i class="bi bi-droplet"></i> 3 Bathrooms</span>
+                  <span class="feature"><i class="bi bi-rulers"></i> 3,450 sq ft</span>
+                </div>
+                <p>Award-winning contemporary design with sustainable features, smart home technology, and resort-style backyard.</p>
+                <div class="property-footer-horizontal">
+                  <div class="property-price-horizontal">$1,375,000</div>
+                  <a href="property-details.html" class="btn-view-horizontal">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
 
         <div class="row gy-4 mt-4">
@@ -507,13 +550,13 @@
     </section><!-- /Featured Properties Section -->
 
     <!-- Featured Services Section -->
-    <section id="featured-services" class="featured-services section">
+    <!-- <section id="featured-services" class="featured-services section">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Featured Services</h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+      </div>
+      
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -541,7 +584,7 @@
                 <img src="assets/img/real-estate/property-interior-2.webp" class="img-fluid" alt="Property Search" loading="lazy">
               </div>
             </div>
-          </div><!-- End Service Item -->
+          </div>
 
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
             <div class="service-card">
@@ -565,7 +608,7 @@
                 <img src="assets/img/real-estate/property-exterior-1.webp" class="img-fluid" alt="Property Valuation" loading="lazy">
               </div>
             </div>
-          </div><!-- End Service Item -->
+          </div>
 
         </div>
 
@@ -593,7 +636,7 @@
                 <img src="assets/img/real-estate/property-interior-8.webp" class="img-fluid" alt="Property Rental" loading="lazy">
               </div>
             </div>
-          </div><!-- End Service Item -->
+          </div>
 
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="500">
             <div class="service-card">
@@ -617,7 +660,7 @@
                 <img src="assets/img/real-estate/property-exterior-4.webp" class="img-fluid" alt="Investment Advisory" loading="lazy">
               </div>
             </div>
-          </div><!-- End Service Item -->
+          </div>
 
         </div>
 
@@ -630,16 +673,15 @@
 
       </div>
 
-    </section><!-- /Featured Services Section -->
+    </section>  /Featured Services Section -->
 
     <!-- Featured Agents Section -->
-    <section id="featured-agents" class="featured-agents section">
+    <!-- <section id="featured-agents" class="featured-agents section">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Featured Agents</h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -677,7 +719,7 @@
                 </div>
               </div>
             </div>
-          </div><!-- End Featured Agent -->
+          </div>
 
           <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
             <div class="featured-agent">
@@ -711,7 +753,7 @@
                 </div>
               </div>
             </div>
-          </div><!-- End Featured Agent -->
+          </div>
 
           <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
             <div class="featured-agent">
@@ -745,7 +787,7 @@
                 </div>
               </div>
             </div>
-          </div><!-- End Featured Agent -->
+          </div>
 
           <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
             <div class="featured-agent">
@@ -779,7 +821,7 @@
                 </div>
               </div>
             </div>
-          </div><!-- End Featured Agent -->
+          </div>
 
         </div>
 
@@ -792,7 +834,8 @@
 
       </div>
 
-    </section><!-- /Featured Agents Section -->
+    </section> -->
+    <!-- /Featured Agents Section -->
 
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials section light-background">
@@ -1251,7 +1294,7 @@
           </a>
           <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
           <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <!-- <a href=""><i class="bi bi-twitter-x"></i></a> -->
             <a href=""><i class="bi bi-facebook"></i></a>
             <a href=""><i class="bi bi-instagram"></i></a>
             <a href=""><i class="bi bi-linkedin"></i></a>
@@ -1261,22 +1304,23 @@
         <div class="col-lg-2 col-6 footer-links">
           <h4>Useful Links</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
+            <li><a href="./">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="blog.html">Blogs</a></li>
+            <li><a href="terms.html">Terms of service</a></li>
+            <li><a href="privacy.html">Privacy policy</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-6 footer-links">
           <h4>Our Services</h4>
           <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
+            <li><a href="kitchen.html">Kitchen</a></li>
+            <li><a href="plumbing.html">Plumbing</a></li>
+            <li><a href="roofing.html">Roofing</a></li>
+            <li><a href="windows.html">Windows</a></li>
+            <li><a href="doors.html">Doors</a></li>
+            <li><a href="bathroom-remodeling.html">Bathroom Remodeling</a></li>
           </ul>
         </div>
 
@@ -1293,13 +1337,13 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">HomeSpace</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <a href="./"><strong class="px-1 sitename">Breekwell</strong></a> <span>All Rights Reserved</span></p>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you've purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
       </div>
     </div>
 
