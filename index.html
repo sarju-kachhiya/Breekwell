@@ -33,7 +33,7 @@
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a href="./" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <img src="assets/img/Breekwell_White.png" alt="">
       </a>
@@ -90,37 +90,50 @@
             <div class="col-lg-7">
               <div class="hero-content" data-aos="zoom-in" data-aos-delay="200">
                 <div class="content-header">
-                  <span class="hero-label">
+                  <span class="hero-label" >
                     <i class="bi bi-house-heart"></i>
                     Dream Homes Await
                   </span>
-                  <h1>Find Your Ideal Property with Expert Guidance</h1>
-                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Connect with verified real estate professionals.</p>
+                  <h1>Transform Home by Expert Remodeling Services</h1>
+                  <p>Discover top-quality home improvement services designed to enhance comfort, safety, and style. Our verified professionals deliver reliable remodeling and repair solutions tailored to your needs.</p>
                 </div>
 
-                <div class="search-container" data-aos="fade-up" data-aos-delay="300">
+                <div class="search-container" id="hero" data-aos="fade-up" data-aos-delay="300">
                   <div class="search-header">
-                    <h3>Start Your Property Search</h3>
-                    <p>Discover thousands of verified listings</p>
+                    <h3>Start Your Home Project Search</h3>
+                    <p>Find trusted experts for your next home upgrade.</p>
                   </div>
 
-                  <form action="" class="property-search-form">
+                  <form action="coreg.html"   class="property-search-form">
                     <div class="search-grid">
                       <div class="search-field">
-                        <label for="search-location" class="field-label">Location</label>
-                        <input type="text" id="search-location" name="location" placeholder="Enter city or neighborhood" required="">
-                        <i class="bi bi-geo-alt field-icon"></i>
-                      </div>
+    <label for="search-name" class="field-label">Name</label>
+    <input type="text" id="search-name" name="name" placeholder="Enter your name" required="">
+    <i class="bi bi-person field-icon"></i>
+</div>
 
+<div class="search-field">
+    <label for="search-email" class="field-label">Email</label>
+    <input type="email" id="search-email" name="email" placeholder="Enter your email" required="">
+    <i class="bi bi-envelope field-icon"></i>
+</div>
+
+<div class="search-field">
+    <label for="search-zip" class="field-label">Zip Code</label>
+    <input type="text" id="search-zip" name="zip" placeholder="Enter zip code" required="">
+    <i class="bi bi-geo-alt field-icon"></i>
+</div>
                       <div class="search-field">
-                        <label for="search-type" class="field-label">Property Type</label>
+                        <label for="search-type" class="field-label">Service Type</label>
                         <select id="search-type" name="property_type" required="">
-                          <option value="">All Types</option>
-                          <option value="house">Single House</option>
-                          <option value="apartment">Apartment</option>
-                          <option value="condo">Condominium</option>
-                          <option value="villa">Villa</option>
-                          <option value="commercial">Commercial</option>
+                          <option value="" selected disabled>Select Service</option>
+                          <option value="All">All Types</option>
+                          <option value="Kitchen">Kitchen</option>
+                          <option value="Plumbing">Plumbing</option>
+                          <option value="Roofing">Roofing</option>
+                          <option value="Windows">Windows</option>
+                          <option value="Doors">Doors</option>
+                          <option value="Bathroom Remodeling">Bathroom Remodeling</option>
                         </select>
                         <i class="bi bi-building field-icon"></i>
                       </div>
@@ -128,7 +141,8 @@
                       <div class="search-field">
                         <label for="search-budget" class="field-label">Budget Range</label>
                         <select id="search-budget" name="price_range" required="">
-                          <option value="">Any Price</option>
+                          <option value="" selected disabled>Select Budget</option>
+                          <option value="Any">Any Price</option>
                           <option value="0-300000">Under $300K</option>
                           <option value="300000-600000">$300K - $600K</option>
                           <option value="600000-900000">$600K - $900K</option>
@@ -139,14 +153,13 @@
                       </div>
 
                       <div class="search-field">
-                        <label for="search-rooms" class="field-label">Bedrooms</label>
+                        <label for="search-rooms" class="field-label">Project Size</label>
                         <select id="search-rooms" name="bedrooms">
-                          <option value="">Any</option>
-                          <option value="1">1 Room</option>
-                          <option value="2">2 Rooms</option>
-                          <option value="3">3 Rooms</option>
-                          <option value="4">4 Rooms</option>
-                          <option value="5+">5+ Rooms</option>
+                          <option value="" selected disabled>Select Project Size</option>
+                          <option value="Any">Any</option>
+                          <option value="Small">Small</option>
+                          <option value="Medium">Medium</option>
+                          <option value="Large">Large</option>
                         </select>
                         <i class="bi bi-door-open field-icon"></i>
                       </div>
@@ -154,7 +167,7 @@
 
                     <button type="submit" class="search-btn">
                       <i class="bi bi-search"></i>
-                      <span>Find Properties</span>
+                      <span>Calculate Expenses</span>
                     </button>
                   </form>
                 </div>
@@ -168,9 +181,9 @@
                   </div>
                   <div class="achievement-item">
                     <div class="achievement-number">
-                      <span data-purecounter-start="0" data-purecounter-end="89" data-purecounter-duration="1" class="purecounter"></span>+
+                      <span data-purecounter-start="0" data-purecounter-end="120" data-purecounter-duration="1" class="purecounter"></span>+
                     </div>
-                    <span class="achievement-text">Expert Agents</span>
+                    <span class="achievement-text">successful projects</span>
                   </div>
                   <div class="achievement-item">
                     <div class="achievement-number">
@@ -188,10 +201,10 @@
                   <div class="featured-property">
                     <img src="assets/img/real-estate/property-exterior-8.webp" alt="Featured Property" class="img-fluid">
                     <div class="property-info">
-                      <div class="property-price">$925,000</div>
+                      <div class="property-price">$2,500 -  Average Kitchen Remodel</div>
                       <div class="property-details">
-                        <span><i class="bi bi-geo-alt"></i> Downtown District</span>
-                        <span><i class="bi bi-house"></i> 4 Bed, 3 Bath</span>
+                        <span><i class="bi bi-geo-alt"></i> Available in Your City</span>
+                        <span><i class="bi bi-house"></i> Full Kitchen Upgrade</span>
                       </div>
                     </div>
                   </div>
@@ -210,7 +223,7 @@
                       <img src="assets/img/real-estate/agent-7.webp" alt="Agent Profile" class="agent-photo">
                       <div class="agent-info">
                         <h4>Michael Chen</h4>
-                        <p>Senior Property Advisor</p>
+                        <p>Senior Remodeling Specialist</p>
                         <div class="agent-rating">
                           <div class="stars">
                             <i class="bi bi-star-fill"></i>
@@ -219,7 +232,7 @@
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                           </div>
-                          <span class="rating-text">5.0 (94 reviews)</span>
+                          <span class="rating-text">5.0 (120+ happy clients)</span>
                         </div>
                       </div>
                     </div>
@@ -251,7 +264,7 @@
                 <img src="assets/img/real-estate/property-exterior-1.webp" alt="Modern Property" class="img-fluid">
                 <div class="experience-badge">
                   <div class="badge-content">
-                    <div class="number"><span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>+</div>
+                    <div class="number"><span data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="1" class="purecounter"></span>+</div>
                     <div class="text">Years<br>Experience</div>
                   </div>
                 </div>
@@ -266,10 +279,10 @@
             <div class="content">
               <div class="section-header">
                 <span class="section-label">About Our Company</span>
-                <h2>Building Dreams, Creating Homes Since 2008</h2>
+                <h2>Transforming Homes, Enhancing Lifestyles Since 2017</h2>
               </div>
 
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+              <p>With over a decade of experience, we specialize in delivering top-quality home remodeling and repair services. From modern kitchen renovations and bathroom upgrades to reliable roofing, plumbing, windows, and doors — we provide customized solutions that make your home more beautiful, functional, and secure.</p>
 
               <div class="achievements-list">
                 <div class="achievement-item">
@@ -277,8 +290,8 @@
                     <i class="bi bi-house-door"></i>
                   </div>
                   <div class="achievement-content">
-                    <h4><span data-purecounter-start="0" data-purecounter-end="3200" data-purecounter-duration="2" class="purecounter"></span>+ Properties Sold</h4>
-                    <p>Successfully completed transactions</p>
+                    <h4><span data-purecounter-start="0" data-purecounter-end="5000" data-purecounter-duration="2" class="purecounter"></span>+ Successful Projects</h4>
+                    <p>Completed kitchen, bathroom, roofing, and remodeling jobs across residential & commercial properties.</p>
                   </div>
                 </div>
                 <div class="achievement-item">
@@ -287,7 +300,7 @@
                   </div>
                   <div class="achievement-content">
                     <h4><span data-purecounter-start="0" data-purecounter-end="98" data-purecounter-duration="1" class="purecounter"></span>% Client Satisfaction</h4>
-                    <p>Happy customers recommend us</p>
+                    <p>Our customers trust us for reliable service, quality craftsmanship, and timely delivery.</p>
                   </div>
                 </div>
               </div>
@@ -297,7 +310,7 @@
                   <span>Discover Our Story</span>
                   <i class="bi bi-arrow-right"></i>
                 </a>
-                <div class="contact-info">
+                <!-- <div class="contact-info">
                   <div class="contact-icon">
                     <i class="bi bi-telephone"></i>
                   </div>
@@ -305,7 +318,7 @@
                     <span>Call us today</span>
                     <strong>+1 (555) 123-4567</strong>
                   </div>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -321,8 +334,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Featured Properties</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <h2>Featured Services</h2>
+        <p>Completed kitchen, bathroom, roofing, and remodeling jobs across residential & commercial properties.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -436,166 +449,155 @@
         <div class="row gy-4 mt-4">
 
           <div class="col-xl-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="property-card-horizontal">
-              <div class="property-image-horizontal">
-                <img src="assets/img/real-estate/property-interior-5.webp" alt="Penthouse" class="img-fluid">
-                <div class="property-badge-horizontal exclusive">Exclusive</div>
-              </div>
-              <div class="property-content-horizontal">
-                <h3><a href="property-details.html">Luxury Penthouse Suite</a></h3>
+  <div class="property-card-horizontal">
+    <div class="property-image-horizontal">
+      <img src="assets/img/service-index/Kitchen.jpg" alt="Modern kitchen" class="img-fluid">
+      <!-- <div class="property-badge-horizontal exclusive">Exclusive Offer</div> -->
+    </div>
+    <div class="property-content-horizontal">
+      <h3><a href="kitchen.html">Kitchen Remodeling</a></h3>
+      <div class="property-location-horizontal">
+        <i class="bi bi-geo-alt"></i>
+        <span>Custom designs for all home sizes</span>
+      </div>
+      <div class="property-features">
+        <span class="feature"><i class="bi bi-tools"></i> Full renovation</span>
+        <span class="feature"><i class="bi bi-lightbulb"></i> Upgrades</span>
+        <span class="feature"><i class="bi bi-currency-dollar"></i> Starting at $2,500</span>
+      </div>
+      <p>Upgrade cabinets, countertops, lighting, and flooring to create a stylish and functional kitchen you’ll love.</p>
+      <div class="property-footer-horizontal">
+        <!-- <div class="property-price-horizontal">Starting at $2,500</div> -->
+        <a href="kitchen.html" class="btn-view-horizontal">View Details</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-xl-6">
+        <div class="property-card-horizontal">
+            <div class="property-image-horizontal">
+                <img src="assets/img/service-index/Plumbing.jpg" alt="Plumbing services" class="img-fluid">
+            </div>
+            <div class="property-content-horizontal">
+                <h3><a href="plumbing.html">Plumbing Services</a></h3>
                 <div class="property-location-horizontal">
-                  <i class="bi bi-geo-alt"></i>
-                  <span>Las Vegas, NV 89102</span>
+                    <i class="bi bi-gear"></i>
+                    <span>Reliable Plumbing Repairs & Installations</span>
                 </div>
                 <div class="property-features">
-                  <span class="feature"><i class="bi bi-house"></i> 3 Bedrooms</span>
-                  <span class="feature"><i class="bi bi-droplet"></i> 3 Bathrooms</span>
-                  <span class="feature"><i class="bi bi-rulers"></i> 2,850 sq ft</span>
+                    <span class="feature"><i class="bi bi-droplet"></i> Emergency leak repairs</span>
+                    <span class="feature"><i class="bi bi-shower"></i> Bathroom & kitchen fittings</span>
+                    <span class="feature"><i class="bi bi-lightning"></i> Quick, hassle-free service</span>
                 </div>
-                <p>Spectacular penthouse with floor-to-ceiling windows and private rooftop terrace overlooking the city skyline.</p>
+                <p>From fixing leaks to installing new pipelines, we provide fast and affordable plumbing solutions for homes and businesses.</p>
                 <div class="property-footer-horizontal">
-                  <div class="property-price-horizontal">$2,195,000</div>
-                  <a href="property-details.html" class="btn-view-horizontal">View Details</a>
+                    <a href="plumbing.html" class="btn-view-horizontal">View Details</a>
                 </div>
-              </div>
             </div>
-          </div>
-
-          <div class="col-xl-6" data-aos="fade-up" data-aos-delay="700">
-            <div class="property-card-horizontal">
-              <div class="property-image-horizontal">
-                <img src="assets/img/real-estate/property-interior-8.webp" alt="Modern Home" class="img-fluid">
-                <div class="property-badge-horizontal new">New</div>
-              </div>
-              <div class="property-content-horizontal">
-                <h3><a href="property-details.html">Modern Architectural Gem</a></h3>
-                <div class="property-location-horizontal">
-                  <i class="bi bi-geo-alt"></i>
-                  <span>Phoenix, AZ 85001</span>
-                </div>
-                <div class="property-features">
-                  <span class="feature"><i class="bi bi-house"></i> 4 Bedrooms</span>
-                  <span class="feature"><i class="bi bi-droplet"></i> 3 Bathrooms</span>
-                  <span class="feature"><i class="bi bi-rulers"></i> 3,450 sq ft</span>
-                </div>
-                <p>Award-winning contemporary design with sustainable features, smart home technology, and resort-style backyard.</p>
-                <div class="property-footer-horizontal">
-                  <div class="property-price-horizontal">$1,375,000</div>
-                  <a href="property-details.html" class="btn-view-horizontal">View Details</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
+    </div>
+    </div>
+        
 
         <div class="row gy-4 mt-4">
-
-          <div class="col-xl-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="property-card-horizontal">
-              <div class="property-image-horizontal">
-                <img src="assets/img/real-estate/property-interior-5.webp" alt="Penthouse" class="img-fluid">
-                <div class="property-badge-horizontal exclusive">Exclusive</div>
-              </div>
-              <div class="property-content-horizontal">
-                <h3><a href="property-details.html">Luxury Penthouse Suite</a></h3>
+    <div class="col-xl-6">
+        <div class="property-card-horizontal">
+            <div class="property-image-horizontal">
+                <img src="assets/img/service-index/Roofing.jpg" alt="Roofing solutions" class="img-fluid">
+            </div>
+            <div class="property-content-horizontal">
+                <h3><a href="roofing.html">Roofing Solutions</a></h3>
                 <div class="property-location-horizontal">
-                  <i class="bi bi-geo-alt"></i>
-                  <span>Las Vegas, NV 89102</span>
+                    <i class="bi bi-house-door"></i>
+                    <span>Protect Your Home with Durable Roofing</span>
                 </div>
                 <div class="property-features">
-                  <span class="feature"><i class="bi bi-house"></i> 3 Bedrooms</span>
-                  <span class="feature"><i class="bi bi-droplet"></i> 3 Bathrooms</span>
-                  <span class="feature"><i class="bi bi-rulers"></i> 2,850 sq ft</span>
+                    <span class="feature"><i class="bi bi-house-gear"></i> New roof installation</span>
+                    <span class="feature"><i class="bi bi-search"></i> Leak detection & repair</span>
+                    <span class="feature"><i class="bi bi-check-circle"></i> Long-lasting materials</span>
                 </div>
-                <p>Spectacular penthouse with floor-to-ceiling windows and private rooftop terrace overlooking the city skyline.</p>
+                <p>Expert roof installation, repair, and maintenance to ensure your home stays safe and weatherproof all year round.</p>
                 <div class="property-footer-horizontal">
-                  <div class="property-price-horizontal">$2,195,000</div>
-                  <a href="property-details.html" class="btn-view-horizontal">View Details</a>
+                    <a href="roofing.html" class="btn-view-horizontal">View Details</a>
                 </div>
-              </div>
             </div>
-          </div>
-
-          <div class="col-xl-6" data-aos="fade-up" data-aos-delay="700">
-            <div class="property-card-horizontal">
-              <div class="property-image-horizontal">
-                <img src="assets/img/real-estate/property-interior-8.webp" alt="Modern Home" class="img-fluid">
-                <div class="property-badge-horizontal new">New</div>
-              </div>
-              <div class="property-content-horizontal">
-                <h3><a href="property-details.html">Modern Architectural Gem</a></h3>
-                <div class="property-location-horizontal">
-                  <i class="bi bi-geo-alt"></i>
-                  <span>Phoenix, AZ 85001</span>
-                </div>
-                <div class="property-features">
-                  <span class="feature"><i class="bi bi-house"></i> 4 Bedrooms</span>
-                  <span class="feature"><i class="bi bi-droplet"></i> 3 Bathrooms</span>
-                  <span class="feature"><i class="bi bi-rulers"></i> 3,450 sq ft</span>
-                </div>
-                <p>Award-winning contemporary design with sustainable features, smart home technology, and resort-style backyard.</p>
-                <div class="property-footer-horizontal">
-                  <div class="property-price-horizontal">$1,375,000</div>
-                  <a href="property-details.html" class="btn-view-horizontal">View Details</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-6" data-aos="fade-up" data-aos-delay="700">
-            <div class="property-card-horizontal">
-              <div class="property-image-horizontal">
-                <img src="assets/img/real-estate/property-interior-8.webp" alt="Modern Home" class="img-fluid">
-                <div class="property-badge-horizontal new">New</div>
-              </div>
-              <div class="property-content-horizontal">
-                <h3><a href="property-details.html">Modern Architectural Gem</a></h3>
-                <div class="property-location-horizontal">
-                  <i class="bi bi-geo-alt"></i>
-                  <span>Phoenix, AZ 85001</span>
-                </div>
-                <div class="property-features">
-                  <span class="feature"><i class="bi bi-house"></i> 4 Bedrooms</span>
-                  <span class="feature"><i class="bi bi-droplet"></i> 3 Bathrooms</span>
-                  <span class="feature"><i class="bi bi-rulers"></i> 3,450 sq ft</span>
-                </div>
-                <p>Award-winning contemporary design with sustainable features, smart home technology, and resort-style backyard.</p>
-                <div class="property-footer-horizontal">
-                  <div class="property-price-horizontal">$1,375,000</div>
-                  <a href="property-details.html" class="btn-view-horizontal">View Details</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-6" data-aos="fade-up" data-aos-delay="700">
-            <div class="property-card-horizontal">
-              <div class="property-image-horizontal">
-                <img src="assets/img/real-estate/property-interior-8.webp" alt="Modern Home" class="img-fluid">
-                <div class="property-badge-horizontal new">New</div>
-              </div>
-              <div class="property-content-horizontal">
-                <h3><a href="property-details.html">Modern Architectural Gem</a></h3>
-                <div class="property-location-horizontal">
-                  <i class="bi bi-geo-alt"></i>
-                  <span>Phoenix, AZ 85001</span>
-                </div>
-                <div class="property-features">
-                  <span class="feature"><i class="bi bi-house"></i> 4 Bedrooms</span>
-                  <span class="feature"><i class="bi bi-droplet"></i> 3 Bathrooms</span>
-                  <span class="feature"><i class="bi bi-rulers"></i> 3,450 sq ft</span>
-                </div>
-                <p>Award-winning contemporary design with sustainable features, smart home technology, and resort-style backyard.</p>
-                <div class="property-footer-horizontal">
-                  <div class="property-price-horizontal">$1,375,000</div>
-                  <a href="property-details.html" class="btn-view-horizontal">View Details</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
+    </div>
+    <div class="col-xl-6">
+        <div class="property-card-horizontal">
+            <div class="property-image-horizontal">
+                <img src="assets/img/service-index/Windows.jpg" alt="Window installation" class="img-fluid">
+            </div>
+            <div class="property-content-horizontal">
+                <h3><a href="windows.html">Window Installation & Repair</a></h3>
+                <div class="property-location-horizontal">
+                    <i class="bi bi-window"></i>
+                    <span>Brighten Your Home with Energy-Efficient Windows</span>
+                </div>
+                <div class="property-features">
+                    <span class="feature"><i class="bi bi-sun"></i> Natural light optimization</span>
+                    <span class="feature"><i class="bi bi-lightbulb"></i> Energy-saving solutions</span>
+                    <span class="feature"><i class="bi bi-pencil"></i> Modern design options</span>
+                </div>
+                <p>Upgrade to stylish, insulated windows that improve energy efficiency and elevate your home’s appearance.</p>
+                <div class="property-footer-horizontal">
+                    <a href="windows.html" class="btn-view-horizontal">View Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+<div class="row gy-4 mt-4">
+    <div class="col-xl-6">
+        <div class="property-card-horizontal">
+            <div class="property-image-horizontal">
+                <img src="assets/img/service-index/Door.jpg" alt="Door replacement" class="img-fluid">
+            </div>
+            <div class="property-content-horizontal">
+                <h3><a href="doors.html">Door Replacement & Fitting</a></h3>
+                <div class="property-location-horizontal">
+                    <i class="bi bi-door-closed"></i>
+                    <span>Secure & Stylish Doors for Every Room</span>
+                </div>
+                <div class="property-features">
+                    <span class="feature"><i class="bi bi-door-open"></i> Wooden & steel options</span>
+                    <span class="feature"><i class="bi bi-lock"></i> Enhanced security features</span>
+                    <span class="feature"><i class="bi bi-brush"></i> Custom design finishes</span>
+                </div>
+                <p>Enhance your home’s curb appeal and safety with premium doors for entryways, interiors, and patios.</p>
+                <div class="property-footer-horizontal">
+                    <a href="doors.html" class="btn-view-horizontal">View Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-6">
+        <div class="property-card-horizontal">
+            <div class="property-image-horizontal">
+                <img src="assets/img/service-index/Bathroom.jpg" alt="Bathroom remodeling" class="img-fluid">
+            </div>
+            <div class="property-content-horizontal">
+                <h3><a href="bathroom.html">Bathroom Remodeling</a></h3>
+                <div class="property-location-horizontal">
+                    <i class="bi bi-droplet"></i>
+                    <span>Create a Relaxing, Modern Bathroom Oasis</span>
+                </div>
+                <div class="property-features">
+                    <span class="feature"><i class="bi bi-bathtub"></i> Shower & tub installations</span>
+                    <span class="feature"><i class="bi bi-lightbulb"></i> Modern lighting & fixtures</span>
+                    <span class="feature"><i class="bi bi-palette"></i> Elegant tile & flooring</span>
+                </div>
+                <p>From luxurious showers to sleek vanities, we turn ordinary bathrooms into spa-like retreats.</p>
+                <div class="property-footer-horizontal">
+                    <a href="bathroom.html" class="btn-view-horizontal">View Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+        
 
       </div>
 
@@ -895,7 +897,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Testimonials</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> -->
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -909,8 +911,8 @@
                   <img src="assets/img/person/person-f-5.webp" class="img-fluid" alt="Testimonial 1">
                 </div>
                 <div class="testimonial-meta">
-                  <h3>Sophia Martinez</h3>
-                  <h4>Creative Director</h4>
+                  <h3> Sarah Thompson</h3>
+                  <h4>Homeowner – Kitchen Remodeling</h4>
                   <div class="company-logo">
                     <i class="bi bi-building"></i>
                   </div>
@@ -918,7 +920,7 @@
               </div>
               <div class="testimonial-body">
                 <i class="bi bi-chat-quote-fill quote-icon"></i>
-                <p>Leveraging cutting-edge design principles to create immersive brand experiences that resonate with modern audiences.</p>
+                <p>The team completely transformed my outdated kitchen into a modern, functional space. From cabinets to countertops, everything was handled with precision and care. Truly exceeded my expectations!</p>
               </div>
             </div>
           </div>
@@ -930,8 +932,8 @@
                   <img src="assets/img/person/person-m-5.webp" class="img-fluid" alt="Testimonial 2">
                 </div>
                 <div class="testimonial-meta">
-                  <h3>Alexander Wright</h3>
-                  <h4>CEO &amp; Founder</h4>
+                  <h3>David Miller</h3>
+                  <h4>Plumbing Service Client</h4>
                   <div class="company-logo">
                     <i class="bi bi-buildings"></i>
                   </div>
@@ -939,7 +941,7 @@
               </div>
               <div class="testimonial-body">
                 <i class="bi bi-chat-quote-fill quote-icon"></i>
-                <p>Revolutionary solutions have transformed our business landscape, driving unprecedented growth and market leadership position.</p>
+                <p>Fast, reliable, and affordable plumbing service. They fixed a major leak in my home within hours. The professionalism and attention to detail were outstanding.</p>
               </div>
             </div>
           </div>
@@ -951,8 +953,8 @@
                   <img src="assets/img/person/person-f-6.webp" class="img-fluid" alt="Testimonial 3">
                 </div>
                 <div class="testimonial-meta">
-                  <h3>Isabella Kim</h3>
-                  <h4>Product Strategist</h4>
+                  <h3>Emily Johnson</h3>
+                  <h4>Roofing & Windows Upgrade</h4>
                   <div class="company-logo">
                     <i class="bi bi-building-check"></i>
                   </div>
@@ -960,7 +962,7 @@
               </div>
               <div class="testimonial-body">
                 <i class="bi bi-chat-quote-fill quote-icon"></i>
-                <p>Strategic implementation of innovative technologies has elevated our product development and market penetration.</p>
+                <p>Our new roof and energy-efficient windows have not only improved the look of our home but also saved us money on energy bills. Highly recommend their expert craftsmanship!</p>
               </div>
             </div>
           </div>
@@ -972,8 +974,8 @@
                   <img src="assets/img/person/person-m-6.webp" class="img-fluid" alt="Testimonial 4">
                 </div>
                 <div class="testimonial-meta">
-                  <h3>James Cooper</h3>
-                  <h4>Tech Lead</h4>
+                  <h3>Mark Wilson</h3>
+                  <h4>Bathroom Remodeling Customer</h4>
                   <div class="company-logo">
                     <i class="bi bi-building-gear"></i>
                   </div>
@@ -981,7 +983,7 @@
               </div>
               <div class="testimonial-body">
                 <i class="bi bi-chat-quote-fill quote-icon"></i>
-                <p>Exceptional technical expertise and innovative solutions have streamlined our development processes significantly.</p>
+                <p>I wanted a spa-like bathroom, and they delivered exactly that. The design, lighting, and fittings were top-notch. Every detail was thoughtfully planned and perfectly executed.</p>
               </div>
             </div>
           </div>
@@ -998,7 +1000,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Why Us</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> -->
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -1007,8 +1009,8 @@
 
           <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
             <div class="content">
-              <h3>Why Choose Premier Real Estate Partners?</h3>
-              <p>With over two decades of experience in the real estate market, we've built our reputation on trust, expertise, and exceptional results. Our dedicated team of local experts understands the nuances of every neighborhood and market trend.</p>
+              <h3>Why Choose Our Home Remodeling & Repair Experts?</h3>
+              <p>With more than two decades of hands-on experience in home improvement, we’ve built our reputation on quality craftsmanship, trust, and exceptional customer satisfaction. From kitchens and bathrooms to roofing, plumbing, windows, and doors — our dedicated professionals ensure your home is safe, stylish, and built to last.</p>
 
               <div class="features-list">
                 <div class="feature-item d-flex align-items-center mb-3">
@@ -1016,8 +1018,8 @@
                     <i class="bi bi-check-circle-fill"></i>
                   </div>
                   <div>
-                    <h5>Local Market Expertise</h5>
-                    <p>Deep knowledge of neighborhoods, pricing trends, and market conditions in your area.</p>
+                    <h5>Expert Craftsmanship</h5>
+                    <p>Skilled professionals with deep knowledge of remodeling, installations, and repairs across every home service.</p>
                   </div>
                 </div>
 
@@ -1026,8 +1028,8 @@
                     <i class="bi bi-shield-check"></i>
                   </div>
                   <div>
-                    <h5>Verified Listings Only</h5>
-                    <p>Every property is thoroughly vetted and verified before listing to ensure accuracy and quality.</p>
+                    <h5>Verified & Trusted Service</h5>
+                    <p>Every project is handled with licensed experts and premium-quality materials to guarantee long-lasting results.</p>
                   </div>
                 </div>
 
@@ -1036,8 +1038,8 @@
                     <i class="bi bi-headset"></i>
                   </div>
                   <div>
-                    <h5>24/7 Client Support</h5>
-                    <p>Our dedicated support team is available around the clock to assist with your real estate needs.</p>
+                    <h5>24/7 Customer Support</h5>
+                    <p>We’re here for you anytime — whether it’s emergency plumbing, roofing repairs, or quick consultations.</p>
                   </div>
                 </div>
 
@@ -1047,14 +1049,14 @@
                   </div>
                   <div>
                     <h5>Proven Track Record</h5>
-                    <p>Consistently delivering results with over 2,500 successful transactions and 98% client satisfaction.</p>
+                    <p>Thousands of successful home projects completed with 98% client satisfaction across all services.</p>
                   </div>
                 </div>
               </div>
 
               <div class="cta-buttons mt-4">
-                <a href="#" class="btn btn-primary me-3">Learn More About Us</a>
-                <a href="#" class="btn btn-outline-primary">Contact Our Team</a>
+                <a href="about.html" class="btn btn-primary me-3">Learn More About Us</a>
+                <a href="contact.html" class="btn btn-outline-primary">Contact Our Team</a>
               </div>
             </div>
           </div>
@@ -1068,10 +1070,10 @@
                       <i class="bi bi-house-door"></i>
                     </div>
                     <div class="stat-number">
-                      <span data-purecounter-start="0" data-purecounter-end="2500" data-purecounter-duration="2" class="purecounter"></span>+
+                      <span data-purecounter-start="0" data-purecounter-end="5000" data-purecounter-duration="2" class="purecounter"></span>+
                     </div>
-                    <div class="stat-label">Homes Sold</div>
-                    <p>Successfully closed transactions across all property types and price ranges.</p>
+                    <div class="stat-label">Projects Completed</div>
+                    <p>From small renovations to large-scale remodeling jobs.</p>
                   </div>
                 </div>
 
@@ -1084,7 +1086,7 @@
                       <span data-purecounter-start="0" data-purecounter-end="98" data-purecounter-duration="2" class="purecounter"></span>%
                     </div>
                     <div class="stat-label">Client Satisfaction</div>
-                    <p>Exceptional service quality rated by our satisfied homeowners and investors.</p>
+                    <p>Happy homeowners trust us for reliable and affordable solutions.</p>
                   </div>
                 </div>
 
@@ -1097,7 +1099,7 @@
                       <span data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="2" class="purecounter"></span>+
                     </div>
                     <div class="stat-label">Years Experience</div>
-                    <p>Two decades of expertise navigating changing market conditions successfully.</p>
+                    <p>Decades of expertise in home improvement and maintenance.</p>
                   </div>
                 </div>
 
@@ -1109,8 +1111,8 @@
                     <div class="stat-number">
                       <span data-purecounter-start="0" data-purecounter-end="45" data-purecounter-duration="2" class="purecounter"></span>+
                     </div>
-                    <div class="stat-label">Industry Awards</div>
-                    <p>Recognition for excellence in real estate service and client satisfaction.</p>
+                    <div class="stat-label">Awards & Recognitions</div>
+                    <p>Honored for excellence in service, safety, and customer satisfaction.</p>
                   </div>
                 </div>
               </div>
@@ -1120,12 +1122,12 @@
                   <div class="quote-icon mb-2">
                     <i class="bi bi-quote"></i>
                   </div>
-                  <p>"Working with this team made buying our first home a seamless experience. Their knowledge of the local market and dedication to finding the perfect property exceeded our expectations."</p>
+                  <p>"Choosing this team for our bathroom and kitchen remodeling was the best decision. Their attention to detail, professionalism, and quality work completely transformed our home."</p>
                   <div class="testimonial-author d-flex align-items-center mt-3">
                     <img src="assets/img/person/person-f-3.webp" alt="Client" class="author-image me-3">
                     <div>
-                      <h6>Sarah Martinez</h6>
-                      <span>First-time Homebuyer</span>
+                      <h6>Lisa Anderson</h6>
+                      <span>Homeowner</span>
                     </div>
                   </div>
                 </div>
@@ -1148,12 +1150,12 @@
           <div class="col-xl-6 col-lg-8">
 
             <div class="cta-content text-center">
-              <h2>Need Help Finding Your Dream Property?</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+              <h2>Ready to Transform Your Home with Expert Services?</h2>
+              <p>Whether you need a modern kitchen, a stylish bathroom, durable roofing, or reliable plumbing, our trusted team is here to make it happen. Get started today with a free consultation and expert guidance.</p>
 
               <div class="cta-buttons">
-                <a href="#" class="btn btn-primary">Contact Us Today</a>
-                <a href="#" class="btn btn-outline">Schedule a Call</a>
+                <a href="contact.html" class="btn btn-primary">Contact Us Today</a>
+                <a href="#hero" class="btn btn-outline">Fill Form and Explore Offers</a>
               </div>
 
               <div class="cta-features">
@@ -1166,7 +1168,7 @@
                   <span>24/7 Support</span>
                 </div>
                 <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
-                  <i class="bi bi-shield-check-fill"></i>
+                  <i class="bi bi-check"></i>
                   <span>Trusted Experts</span>
                 </div>
               </div>
@@ -1341,10 +1343,10 @@
     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
+          <a href="./" class="logo d-flex align-items-center">
             <img src="assets/img/Breekwell_White.png" alt="">
           </a>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+          <p>Discover top-quality home improvement services designed to enhance comfort, safety, and style. Our verified professionals deliver reliable remodeling and repair solutions tailored to your needs.</p>
           <div class="social-links d-flex mt-4">
             <!-- <a href=""><i class="bi bi-twitter-x"></i></a> -->
             <a href=""><i class="bi bi-facebook"></i></a>
