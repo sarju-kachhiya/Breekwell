@@ -35,6 +35,59 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <style>
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .card h2 {
+      font-size: 20px;
+      margin-bottom: 15px;
+      color: #033d1e;
+    }
+
+    /* Specialties Section */
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .tag {
+      background: #e6f4ec;
+      color: #0a6830;
+      padding: 8px 14px;
+      border-radius: 20px;
+      border: 0px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    /* Certifications Section */
+    .certifications {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .certifications li {
+      display: flex;
+      align-items: center;
+      font-size: 15px;
+      color: #222;
+      margin-bottom: 12px;
+    }
+
+    .certifications li i {
+      margin-right: 10px;
+      font-size: 18px;
+      color: #0a6830;
+    }
+  </style>
 
 </head>
 
@@ -227,6 +280,27 @@
                       <img src="assets/img/real-estate/property-exterior-2.webp" alt="Exterior View" class="img-fluid">
                     </div>
                   </div>
+                  <div class="card mt-5">
+                  <h2>Specialties</h2>
+                  <div class="tags">
+                    <div class="tag">Luxury Homes</div>
+                    <div class="tag">First-Time Buyers</div>
+                    <div class="tag">Investment Properties</div>
+                    <div class="tag">Relocation</div>
+                    <div class="tag">Bilingual Support</div>
+                  </div>
+                </div>
+
+                <!-- Certifications -->
+                <div class="card">
+                  <h2>Certifications</h2>
+                  <ul class="certifications">
+                    <li><i class="bi bi-person-check"></i> Certified Residential Specialist (CRS)</li>
+                    <li><i class="bi bi-award-fill"></i> Graduate REALTOR Institute (GRI)</li>
+                    <li><i class="bi bi-building-check"></i> Luxury Home Marketing Specialist</li>
+                  </ul>
+                </div>
+                  
 
                   
 
