@@ -1,42 +1,60 @@
 <?php
-  /**
-  * Requires the "PHP Email Form" library
-  * The "PHP Email Form" library is available only in the pro version of the template
-  * The library should be uploaded to: vendor/php-email-form/php-email-form.php
-  * For more info and help: https://bootstrapmade.com/php-email-form/
-  */
+// Database connection
+$host = "localhost";        // Change if needed
+$user = "cgtbycom_breekwell_user";             // Database username
+$pass = "^VQXXO;vHaXm";                 // Database password
+$dbname = "cgtbycom_breekwell_db";   // Database name
 
-  // Replace contact@example.com with your real receiving email address
-  $receiving_email_address = 'contact@example.com';
+$conn = new mysqli($host, $user, $pass, $dbname);
 
-  if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
-    include( $php_email_form );
-  } else {
-    die( 'Unable to load the "PHP Email Form" Library!');
-  }
+// Check connection
+if ($conn->connect_error) {
+    die("<script>alert('Database connection failed!'); window.location.href='../index.html';</script>");
+}
 
-  $contact = new PHP_Email_Form;
-  $contact->ajax = true;
-  
-  $contact->to = $receiving_email_address;
-  $contact->from_name = $_POST['name'];
-  $contact->from_email = $_POST['email'];
-  $contact->subject = $_POST['subject'];
+// Collect form data
+$name    = isset($_POST['name']) ? trim($_POST['name']) : '';
+$email   = isset($_POST['email']) ? trim($_POST['email']) : '';
+$subject = isset($_POST['subject']) ? trim($_POST['subject']) : '';
+$message = isset($_POST['message']) ? trim($_POST['message']) : '';
 
-  // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
-  /*
-  $contact->smtp = array(
-    'host' => 'example.com',
-    'username' => 'example',
-    'password' => 'pass',
-    'port' => '587'
-  );
-  */
+// Validate required fields
+if (empty($name) || empty($email) || empty($subject) || empty($message)) {
+    die("<script>alert('All fields are required!'); window.location.href='../index.html';</script>");
+}
 
-  $contact->add_message( $_POST['name'], 'From');
-  $contact->add_message( $_POST['email'], 'Email');
-  isset($_POST['phone']) && $contact->add_message($_POST['phone'], 'Phone');
-  $contact->add_message( $_POST['message'], 'Message', 10);
+// Prepare insert query
+$stmt = $conn->prepare("INSERT INTO contact_messages (name, email, subject, message) VALUES (?, ?, ?, ?)");
+$stmt->bind_param("ssss", $name, $email, $subject, $message);
 
-  echo $contact->send();
+// Execute and show popup
+if ($stmt->execute()) {
+    echo "
+    <html>
+    <head>
+      <title>Message Stored</title>
+      <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 80px; background: #f7f7f7; }
+        .box { background: white; padding: 40px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.2); display: inline-block; }
+        h2 { color: green; }
+        button { margin-top: 20px; padding: 12px 25px; border: none; border-radius: 5px; background: #007BFF; color: white; font-size: 16px; cursor: pointer; }
+        button:hover { background: #0056b3; }
+      </style>
+    </head>
+    <body>
+      <div class='box'>
+        <h2>✅ Your message has been stored successfully!</h2>
+        <button onclick=\"window.location.href='../'\">Back to Home</button>
+      </div>
+    </body>
+    </html>
+    ";
+} else {
+    echo "<script>alert('Error saving message. Please try again!'); window.location.href='../404.html';</script>";
+}
+
+
+
+$stmt->close();
+$conn->close();
 ?>

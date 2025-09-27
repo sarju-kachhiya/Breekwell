@@ -2,7 +2,7 @@
 // Database connection settings
 $host = "localhost";        // Database host
 $user = "cgtbycom_breekwell_user";             // Database username
-$pass = "Breekwell#2025";                 // Database password
+$pass = "^VQXXO;vHaXm";                 // Database password
 $dbname = "cgtbycom_breekwell_db";   // Database name
 
 // Create DB connection
@@ -10,7 +10,7 @@ $conn = new mysqli($host, $user, $pass, $dbname);
 
 // Check connection
 if ($conn->connect_error) {
-    header("Location: /404.html");
+    header("Location: ../404.html");
     exit();
 }
 
@@ -23,9 +23,8 @@ $price_range   = isset($_POST['price_range']) ? trim($_POST['price_range']) : ''
 $bedrooms      = isset($_POST['bedrooms']) ? trim($_POST['bedrooms']) : '';
 
 // Validate required fields
-if (empty($name) || empty($email) || empty($zip) || empty($property_type) || empty($price_range)) {
-    header("Location: /404.html");
-    exit();
+if ($conn->connect_error) {
+    die("❌ Database connection failed: " . $conn->connect_error);
 }
 
 // Prepare & bind
@@ -35,11 +34,11 @@ $stmt->bind_param("ssssss", $name, $email, $zip, $property_type, $price_range, $
 // Execute query
 if ($stmt->execute()) {
     // Redirect to coreg.html on success
-    header("Location: /coreg.html");
+    header("Location: ../coreg.html");
     exit();
 } else {
     // Redirect to 404.html on failure
-    header("Location: /404.html");
+    header("Location: ../404.html");
     exit();
 }
 

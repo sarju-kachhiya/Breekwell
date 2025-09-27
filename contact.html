@@ -143,43 +143,26 @@
             <div class="contact-form-wrapper">
               <h2 class="text-center mb-4">Send a Message</h2>
 
-              <form action="forms/contact.php" method="post" class="php-email-form">
-                <div class="row g-3">
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <input type="text" class="form-control" name="name" placeholder="Your Name" required="">
-                    </div>
-                  </div>
+              <form action="forms/contact.php" method="post" >
+  <div class="row g-3">
+    <div class="col-md-6">
+      <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+    </div>
+    <div class="col-md-6">
+      <input type="email" class="form-control" name="email" placeholder="Email Address" required>
+    </div>
+    <div class="col-12">
+      <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+    </div>
+    <div class="col-12">
+      <textarea class="form-control" name="message" placeholder="Your Message" rows="6" required></textarea>
+    </div>
+    <div class="col-12 text-center">
+      <button type="submit" class="btn-submit">SEND MESSAGE</button>
+    </div>
+  </div>
+</form>
 
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <input type="email" class="form-control" name="email" placeholder="Email Address" required="">
-                    </div>
-                  </div>
-
-                  <div class="col-12">
-                    <div class="form-group">
-                      <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                    </div>
-                  </div>
-
-                  <div class="col-12">
-                    <div class="form-group">
-                      <textarea class="form-control" name="message" placeholder="Your Message" rows="6" required=""></textarea>
-                    </div>
-                  </div>
-
-                  <div class="col-12">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Your message has been sent. Thank you!</div>
-                  </div>
-
-                  <div class="col-12 text-center">
-                    <button type="submit" class="btn-submit">SEND MESSAGE</button>
-                  </div>
-                </div>
-              </form>
             </div>
           </div>
         </div>
